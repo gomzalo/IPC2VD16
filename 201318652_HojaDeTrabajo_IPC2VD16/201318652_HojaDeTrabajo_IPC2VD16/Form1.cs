@@ -52,5 +52,21 @@ namespace _201318652_HojaDeTrabajo_IPC2VD16
             }
             
         }
+
+        private void HipotenusaButton_Click(object sender, EventArgs e)
+        {
+            double b = Convert.ToDouble(XTB.Text);
+            double c = Convert.ToDouble(YTB.Text);
+            double a = Math.Sqrt(Math.Pow(b, 2) + Math.Pow(c, 2));
+            ResultadoLB.Text = "a: " + Math.Round(a, 2);
+        }
+
+        private void LimpiarButton_Click(object sender, EventArgs e)
+        {
+            XTB.Text = "";
+            YTB.Text = "";
+            ZTB.Text = "";
+            WTB.Text = "";
+        }
     }
 }

@@ -47,6 +47,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.LimpiarButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // IVAButton
@@ -97,6 +98,7 @@
             this.HipotenusaButton.TabIndex = 3;
             this.HipotenusaButton.Text = "Hipotenusa";
             this.HipotenusaButton.UseVisualStyleBackColor = false;
+            this.HipotenusaButton.Click += new System.EventHandler(this.HipotenusaButton_Click);
             // 
             // XTB
             // 
@@ -263,12 +265,26 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "X: a, coeficiente cuadratico\r\nY: b, coeficiente lineal\r\nZ: c, constante\r\n";
             // 
+            // LimpiarButton
+            // 
+            this.LimpiarButton.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.LimpiarButton.Font = new System.Drawing.Font("Segoe UI Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LimpiarButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LimpiarButton.Location = new System.Drawing.Point(249, 129);
+            this.LimpiarButton.Name = "LimpiarButton";
+            this.LimpiarButton.Size = new System.Drawing.Size(99, 30);
+            this.LimpiarButton.TabIndex = 19;
+            this.LimpiarButton.Text = "Limpiar";
+            this.LimpiarButton.UseVisualStyleBackColor = false;
+            this.LimpiarButton.Click += new System.EventHandler(this.LimpiarButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(580, 352);
+            this.Controls.Add(this.LimpiarButton);
             this.Controls.Add(this.ResultadoLB);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -317,6 +333,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button LimpiarButton;
     }
 }
 
