@@ -1,0 +1,7 @@
+* ¿Qué entiende como "commit"?
+	Es un cambio realizado en el proyecto que debe llevar un comentario con descripción relacionada a los cambios que se llevaron a cabo.
+¿Qué entiende como "merge"?
+	Mezcla una rama seleccionada en otra.
+¿Cuál es la diferencia entre "Pull" y "Push"?
+	- Pull: descarga los cambios en el repositorio remoto y los unifica en la rama actual.
+	- Push: Sube la rama actual al servidor remoto.
