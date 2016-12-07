@@ -86,6 +86,7 @@
             this.DistanciaButton.TabIndex = 2;
             this.DistanciaButton.Text = "Distancia";
             this.DistanciaButton.UseVisualStyleBackColor = false;
+            this.DistanciaButton.Click += new System.EventHandler(this.DistanciaButton_Click);
             // 
             // HipotenusaButton
             // 

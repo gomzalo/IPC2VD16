@@ -68,5 +68,11 @@ namespace _201318652_HojaDeTrabajo_IPC2VD16
             ZTB.Text = "";
             WTB.Text = "";
         }
+
+        private void DistanciaButton_Click(object sender, EventArgs e)
+        {
+            double d = ((Convert.ToDouble(XTB.Text) + Convert.ToDouble(YTB.Text)) / 2) * Convert.ToDouble(ZTB.Text);
+            ResultadoLB.Text = "Distancia: " + d.ToString();
+        }
     }
 }
